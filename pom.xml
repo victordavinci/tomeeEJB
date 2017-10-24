@@ -49,7 +49,7 @@
 			<plugin>
 				<groupId>org.apache.openejb.maven</groupId>
 				<artifactId>tomee-maven-plugin</artifactId>
-				<version>1.7.0</version>
+				<version>1.7.4</version>
 				<configuration>
 					<context>ROOT</context>
 					<synchronization>

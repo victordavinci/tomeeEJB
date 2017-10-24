@@ -6,18 +6,15 @@ import java.util.List;
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
+
 import controller.PostController;
-import db.DataBase;
 import model.Post;
 	
 @Named
 @SessionScoped
 	public class PostMb  implements Serializable {
-		private static final long serialVersionUID = 1L;
 
-		@Inject
-		private DataBase db;
-		
+	private static final long serialVersionUID = 154981672465L;
 		@Inject
 		private PostController postCntr;
 		
@@ -37,7 +34,7 @@ import model.Post;
 		}
 		
 		public List<Post> listPostUser(){
-			return postCntr.getUserPost(authMb.getCurrentUserId(), db.getPost());
+			return postCntr.getUserPost(authMb.getCurrentUserId());
 		}
 
 		public String getTitle() {

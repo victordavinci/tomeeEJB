@@ -33,7 +33,7 @@ public class DataBase {
 		return posts.size();
 	}
 	
-	public List<Post> getPost(){
+	public List<Post> getPosts(){
 		return this.posts;
 	}
 	
